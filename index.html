@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste do chatbot</title>
+    <style>
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Variáveis de Cores (Paleta Luxo/Minimalista) */
+        :root {
+            --bg-color: #fcfbf9;       /* Off-white caloroso e sofisticado */
+            --text-primary: #111111;   /* Preto quase absoluto para alto contraste */
+            --text-secondary: #666666; /* Cinza elegante para subtítulos */
+            --accent-gold: #c5a880;    /* Dourado fosco/champanhe */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            overflow-x: hidden;
+        }
+
+        /* Cabeçalho / Navegação Discreta */
+        header {
+            padding: 40px 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            letter-spacing: 0.15em;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+        }
+
+        header .logo {
+            font-weight: 700;
+            color: var(--text-primary);
+        }
+
+        header nav a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            margin-left: 30px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: var(--accent-gold);
+        }
+
+        /* Conteúdo Principal */
+        main {
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 0 20px;
+        }
+
+        .hero-container {
+            text-align: center;
+            max-width: 800px;
+            animation: fadeIn 1.6s ease-out;
+        }
+
+        /* Título Luxuoso com Serifa */
+        h1 {
+            font-family: "Playfair Display", "Didot", "Bodoni MT", "Georgia", serif;
+            font-size: clamp(2.5rem, 6vw, 4.5rem);
+            font-weight: 300;
+            line-height: 1.2;
+            margin-bottom: 24px;
+            letter-spacing: -0.02em;
+        }
+
+        /* Detalhe Sutil (Linha de Divisão) */
+        .divider {
+            width: 40px;
+            height: 1px;
+            background-color: var(--accent-gold);
+            margin: 0 auto 32px auto;
+        }
+
+        .subtitle {
+            font-size: clamp(0.9rem, 2vw, 1.1rem);
+            color: var(--text-secondary);
+            font-weight: 300;
+            letter-spacing: 0.05em;
+            line-height: 1.6;
+        }
+
+        /* Rodapé */
+        footer {
+            padding: 40px 80px;
+            text-align: center;
+            font-size: 0.7rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+
+        /* Animação de entrada suave */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsividade para telas menores */
+        @media (max-width: 768px) {
+            header {
+                padding: 30px 40px;
+            }
+            footer {
+                padding: 30px 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">M N M L</div>
+        <nav>
+            <a href="#">Início</a>
+            <a href="#">Sobre</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="hero-container">
+            <h1>Teste do chatbot</h1>
+            <div class="divider"></div>
+            <p class="subtitle">A harmonia entre a inteligência artificial e o design essencial.</p>
+            <p class="subtitle">Clique no circulo no canto inferior direito para conversar com o chatbot.</p>
+            <p class="subtitle">Este é um teste para verificar a integração do chatbot.</p>
+        </div>
+    </main>
+
+    <footer>
+        <script src='https://cdn.jotfor.ms/agent/embedjs/019eb6f7eb9e7137950746cd40de1386838a/embed.js'>
+</script>
+        &copy; 2026 Todos os direitos reservados.
+    </footer>
+
+</body>
+</html>
